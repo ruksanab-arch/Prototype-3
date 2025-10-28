@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
-        physics.gravity *= gravityModifier;
+        Physics.gravity *= gravityModifier;
         
     }
 
