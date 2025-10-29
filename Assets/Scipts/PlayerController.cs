@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public bool isOnGround = true;
     public bool gameOver;
     private Animator playerAnim;
+    public ParticleSystem explosionParticle;
     
 
     // Start is called before the first frame update
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour
         {
             gameOver = true;
             Debug.Log("Game Over!");
-            playerAnim.SetBool("Death_b", true);
+            playerAnim.SetTrigger("Death_a");
             playerAnim.SetInteger("DeathType_int", 1);
         }
     }
