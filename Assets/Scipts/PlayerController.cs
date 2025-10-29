@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float gravityModifier;
     public bool isOnGround = true;
     public bool gameOver;
+    private Animator playerAnim;
+    
     // Start is called before the first frame update
     void Start()
     {
