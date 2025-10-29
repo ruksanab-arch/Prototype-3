@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Game Over!");
             playerAnim.SetTrigger("Death_a");
             playerAnim.SetInteger("DeathType_int", 1);
+            explosionParticle.Play();
         }
     }
 }
