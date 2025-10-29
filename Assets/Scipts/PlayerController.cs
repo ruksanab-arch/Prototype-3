@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public bool gameOver;
     private Animator playerAnim;
     public ParticleSystem explosionParticle;
+    public ParticleSystem dirtParticle;
     
 
     // Start is called before the first frame update
